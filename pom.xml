@@ -14,8 +14,7 @@
     </modules>
 
     <properties>
-        <maven.compiler.source>20</maven.compiler.source>
-        <maven.compiler.target>20</maven.compiler.target>
+
         <junit.version>5.8.1</junit.version>
         <maven.jar.plugin.version>2.2</maven.jar.plugin.version>
         <maven.compiler.plugin.version>2.2</maven.compiler.plugin.version>
@@ -48,7 +47,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.plugin.version}</version>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>20</source>
+                    <target>20</target>
+                </configuration>
                 <!--                add something here-->
             </plugin>
         </plugins>
